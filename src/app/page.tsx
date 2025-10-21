@@ -71,7 +71,6 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white relative overflow-hidden">
-      {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div
           className="absolute w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
@@ -86,7 +85,6 @@ export default function Portfolio() {
         <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
 
-      {/* Navigation */}
       <nav className="fixed top-0 w-full bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
@@ -117,7 +115,6 @@ export default function Portfolio() {
       </nav>
 
       <main className="relative z-10">
-        {/* Hero Section */}
         {activeSection === "home" && (
           <section className="min-h-screen flex items-center justify-center px-6">
             <div className="max-w-6xl w-full">
@@ -173,7 +170,7 @@ export default function Portfolio() {
                     <Github size={24} />
                   </a>
                   
-                    href="alhabhonggu@email.com"
+                    href="mailto:alhabhonggu@email.com"
                     className="p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all"
                   >
                     <Mail size={24} />
@@ -184,7 +181,6 @@ export default function Portfolio() {
           </section>
         )}
 
-        {/* Projects Section */}
         {activeSection === "projects" && (
           <section className="min-h-screen py-32 px-6">
             <div className="max-w-6xl mx-auto">
@@ -246,7 +242,6 @@ export default function Portfolio() {
           </section>
         )}
 
-        {/* Skills Section */}
         {activeSection === "skills" && (
           <section className="min-h-screen py-32 px-6">
             <div className="max-w-6xl mx-auto">
@@ -307,7 +302,6 @@ export default function Portfolio() {
           </section>
         )}
 
-        {/* Contact Section */}
         {activeSection === "contact" && (
           <section className="min-h-screen flex items-center justify-center px-6">
             <div className="max-w-4xl w-full">
@@ -320,7 +314,7 @@ export default function Portfolio() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 
-                  href="alhabhonggu@email.com"
+                  href="mailto:alhabhonggu@email.com"
                   className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all text-center"
                 >
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
