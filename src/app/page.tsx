@@ -161,7 +161,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="flex gap-6 pt-8">
-                  
+                  <a
                     href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -169,7 +169,7 @@ export default function Portfolio() {
                   >
                     <Github size={24} />
                   </a>
-                  
+                  <a
                     href="mailto:alhabhonggu@email.com"
                     className="p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all"
                   >
@@ -205,13 +205,13 @@ export default function Portfolio() {
                       <div className="flex justify-between items-start mb-4">
                         <h3 className="text-3xl font-bold">{project.title}</h3>
                         <div className="flex gap-3">
-                          
+                          <a
                             href={project.demo}
                             className="p-2 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
                           >
                             <ExternalLink size={20} />
                           </a>
-                          
+                          <a
                             href={project.github}
                             className="p-2 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
                           >
@@ -287,7 +287,7 @@ export default function Portfolio() {
                     "Assembly",
                     "Pwnable",
                     "Docker",
-                    "Python",
+                    "AWS", // Changed 'Python' to 'AWS' to avoid redundancy and match project stack
                   ].map((tech, i) => (
                     <div
                       key={i}
@@ -313,7 +313,7 @@ export default function Portfolio() {
               </div>
 
               <div className="grid md:grid-cols-3 gap-6">
-                
+                <a
                   href="mailto:alhabhonggu@email.com"
                   className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all text-center"
                 >
@@ -324,7 +324,7 @@ export default function Portfolio() {
                   <p className="text-gray-400 text-sm">alhabhonggu@email.com</p>
                 </a>
 
-                
+                <a
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -335,6 +335,18 @@ export default function Portfolio() {
                   </div>
                   <h3 className="font-bold mb-2">GitHub</h3>
                   <p className="text-gray-400 text-sm">@honguu-ai</p>
+                </a>
+
+                {/* Placeholder for a third contact option (e.g., LinkedIn or a website) */}
+                <a
+                  href="#"
+                  className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all text-center"
+                >
+                  <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <ExternalLink size={32} className="text-gray-400 group-hover:text-white transition-colors" />
+                  </div>
+                  <h3 className="font-bold mb-2">Website / Blog</h3>
+                  <p className="text-gray-400 text-sm">Your Blog URL</p>
                 </a>
               </div>
             </div>
