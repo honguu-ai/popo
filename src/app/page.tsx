@@ -36,28 +36,28 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "HACK-IN",
       description:
-        "풀스택 이커머스 플랫폼으로 실시간 결제, 재고 관리, 관리자 대시보드를 포함합니다.",
-      tech: ["React", "Next.js", "Stripe", "PostgreSQL"],
+        "CTF 학습에 어려움을 느끼는 초보자들을 위한 웹 기반 CTF 플랫폼입니다.",
+      tech: ["Pwnable", "C", "Docker", "AWS"],
       demo: "#",
       github: "#",
       gradient: "from-purple-500 to-pink-500",
     },
     {
-      title: "AI Chat Application",
+      title: "심전도 측정 AI를 통한 질병 예방 프로그램",
       description:
-        "OpenAI API를 활용한 실시간 AI 채팅 애플리케이션으로 컨텍스트 기반 대화가 가능합니다.",
-      tech: ["TypeScript", "Node.js", "OpenAI", "WebSocket"],
+        "Python의 AI도구를 사용해 심전도 그래프를 분석하여 잠재적 심장 질환을 예측하는 프로그램입니다. Intel AI for Youth 한국 대표 3팀에 선정되었습니다.",
+      tech: ["Pyhton", "Jupiter", "AI", "Machine Learning"],
       demo: "#",
       github: "#",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
-      title: "Design System",
+      title: "JBU CTF Admin at 2025",
       description:
-        "재사용 가능한 컴포넌트 라이브러리와 디자인 토큰을 포함한 완전한 디자인 시스템입니다.",
-      tech: ["React", "Storybook", "Tailwind", "Figma"],
+        "중부대학교 정보보호학과에서 개최하는 2025 JBU CTF 운영 및 문제 제작을 맡았습니다.",
+      tech: ["C", "Pwnable", "Docker", "AWS"],
       demo: "#",
       github: "#",
       gradient: "from-orange-500 to-red-500",
@@ -65,9 +65,9 @@ export default function Portfolio() {
   ];
 
   const skills = [
-    { name: "Frontend Development", icon: Code2, level: 90 },
-    { name: "UI/UX Design", icon: Palette, level: 85 },
-    { name: "Performance Optimization", icon: Zap, level: 88 },
+    { name: "C Dev", icon: Code2, level: 45 },
+    { name: "Exploit Binary", icon: Palette, level: 85 },
+    { name: "Educate", icon: Zap, level: 88 },
   ];
 
   return (
@@ -92,9 +92,9 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center font-bold">
-              YN
+              Py0
             </div>
-            <span className="font-bold text-lg">Your Name</span>
+            <span className="font-bold text-lg">Pwny0</span>
           </div>
           <div className="flex gap-8">
             {["Home", "Projects", "Skills", "Contact"].map((item) => (
@@ -142,8 +142,7 @@ export default function Portfolio() {
                 </h1>
 
                 <p className="text-xl text-gray-400 max-w-2xl leading-relaxed">
-                  사용자 경험과 아름다운 인터페이스를 중시하는 개발자입니다.
-                  혁신적인 아이디어를 실현 가능한 제품으로 만듭니다.
+                  중부대학교 24학번 김민준입니다.
                 </p>
 
                 <div className="flex gap-4 pt-4">
@@ -175,18 +174,10 @@ export default function Portfolio() {
                     <Github size={24} />
                   </a>
                   <a
-                    href="mailto:your@email.com"
+                    href="alhabhonggu@email.com"
                     className="p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all"
                   >
                     <Mail size={24} />
-                  </a>
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all"
-                  >
-                    <Linkedin size={24} />
                   </a>
                 </div>
               </div>
@@ -297,18 +288,12 @@ export default function Portfolio() {
                 <h3 className="text-2xl font-bold mb-6">Tech Stack</h3>
                 <div className="grid md:grid-cols-4 gap-6">
                   {[
-                    "React",
-                    "Next.js",
-                    "TypeScript",
-                    "Tailwind CSS",
-                    "Node.js",
+                    "C",
                     "Python",
-                    "PostgreSQL",
-                    "MongoDB",
+                    "Assembly",
+                    "Pwnable",
                     "Docker",
-                    "AWS",
-                    "Figma",
-                    "Git",
+                    "Python",
                   ].map((tech, i) => (
                     <div
                       key={i}
@@ -336,14 +321,14 @@ export default function Portfolio() {
 
               <div className="grid md:grid-cols-3 gap-6">
                 <a
-                  href="mailto:your@email.com"
+                  href="alhabhonggu@email.com"
                   className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all text-center"
                 >
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <Mail size={32} />
                   </div>
                   <h3 className="font-bold mb-2">Email</h3>
-                  <p className="text-gray-400 text-sm">your@email.com</p>
+                  <p className="text-gray-400 text-sm">alhabhonggu@email.com</p>
                 </a>
 
                 <a
@@ -356,20 +341,7 @@ export default function Portfolio() {
                     <Github size={32} />
                   </div>
                   <h3 className="font-bold mb-2">GitHub</h3>
-                  <p className="text-gray-400 text-sm">@yourusername</p>
-                </a>
-
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all text-center"
-                >
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <Linkedin size={32} />
-                  </div>
-                  <h3 className="font-bold mb-2">LinkedIn</h3>
-                  <p className="text-gray-400 text-sm">Your Profile</p>
+                  <p className="text-gray-400 text-sm">@honguu-ai</p>
                 </a>
               </div>
             </div>
