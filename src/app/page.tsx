@@ -15,6 +15,7 @@ export default function Portfolio() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [scrollY, setScrollY] = useState(0);
 
+// 첫 번째 useEffect - 마우스 움직임
 useEffect(() => {
   const handleMouseMove = (e: MouseEvent) => {
     setMousePosition({ x: e.clientX, y: e.clientY });
@@ -27,18 +28,19 @@ useEffect(() => {
   };
 }, []);
 
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
+// 두 번째 useEffect - 스크롤
+useEffect(() => {
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
 
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("scroll", handleScroll);
+  window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+  
 
   const projects = [
     {
