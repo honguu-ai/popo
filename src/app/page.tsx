@@ -348,14 +348,14 @@ useEffect(() => {
 
                 {/* Placeholder for a third contact option (e.g., LinkedIn or a website) */}
                 <a
-                  href="#"
+                  href="https://f-pwny0.tistory.com/"
                   className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all text-center"
                 >
                   <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <ExternalLink size={32} className="text-gray-400 group-hover:text-white transition-colors" />
                   </div>
-                  <h3 className="font-bold mb-2">Website / Blog</h3>
-                  <p className="text-gray-400 text-sm">Your Blog URL</p>
+                  <h3 className="font-bold mb-2">Blog</h3>
+                  <p className="text-gray-400 text-sm">https://f-pwny0.tistory.com/</p>
                 </a>
               </div>
             </div>
