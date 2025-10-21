@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import {
   Github,
   Mail,
-  Linkedin,
   ExternalLink,
   ArrowRight,
   Code2,
@@ -165,7 +164,7 @@ export default function Portfolio() {
                 </div>
 
                 <div className="flex gap-6 pt-8">
-                  <a
+                  
                     href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -173,7 +172,7 @@ export default function Portfolio() {
                   >
                     <Github size={24} />
                   </a>
-                  <a
+                  
                     href="alhabhonggu@email.com"
                     className="p-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all"
                   >
@@ -210,13 +209,13 @@ export default function Portfolio() {
                       <div className="flex justify-between items-start mb-4">
                         <h3 className="text-3xl font-bold">{project.title}</h3>
                         <div className="flex gap-3">
-                          <a
+                          
                             href={project.demo}
                             className="p-2 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
                           >
                             <ExternalLink size={20} />
                           </a>
-                          <a
+                          
                             href={project.github}
                             className="p-2 bg-white/5 rounded-lg hover:bg-white/10 transition-all"
                           >
@@ -313,14 +312,14 @@ export default function Portfolio() {
           <section className="min-h-screen flex items-center justify-center px-6">
             <div className="max-w-4xl w-full">
               <div className="text-center mb-16">
-                <h2 className="text-6xl font-bold mb-6">Let's Work Together</h2>
+                <h2 className="text-6xl font-bold mb-6">Let&apos;s Work Together</h2>
                 <p className="text-xl text-gray-400">
                   새로운 프로젝트나 협업에 관심이 있으시다면 언제든 연락주세요
                 </p>
               </div>
 
               <div className="grid md:grid-cols-3 gap-6">
-                <a
+                
                   href="alhabhonggu@email.com"
                   className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all text-center"
                 >
@@ -331,7 +330,7 @@ export default function Portfolio() {
                   <p className="text-gray-400 text-sm">alhabhonggu@email.com</p>
                 </a>
 
-                <a
+                
                   href="https://github.com"
                   target="_blank"
                   rel="noopener noreferrer"
